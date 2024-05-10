@@ -1,0 +1,1028 @@
+// !$*UTF8*$!
+{
+	archiveVersion = 1;
+	classes = {
+	};
+	objectVersion = 56;
+	objects = {
+
+/* Begin PBXBuildFile section */
+		4327891C29EFFD2800A653AB /* AddOwnBuildingPresenter.swift in Sources */ = {isa = PBXBuildFile; fileRef = 4327891829EFFD2800A653AB /* AddOwnBuildingPresenter.swift */; };
+		4327891D29EFFD2800A653AB /* AddOwnBuildingRouter.swift in Sources */ = {isa = PBXBuildFile; fileRef = 4327891929EFFD2800A653AB /* AddOwnBuildingRouter.swift */; };
+		4327891E29EFFD2800A653AB /* AddOwnBuildingViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 4327891A29EFFD2800A653AB /* AddOwnBuildingViewController.swift */; };
+		4327891F29EFFD2800A653AB /* AddOwnBuildingInteractor.swift in Sources */ = {isa = PBXBuildFile; fileRef = 4327891B29EFFD2800A653AB /* AddOwnBuildingInteractor.swift */; };
+		4327892429EFFD4A00A653AB /* RemoveOwnBuildingPresenter.swift in Sources */ = {isa = PBXBuildFile; fileRef = 4327892029EFFD4A00A653AB /* RemoveOwnBuildingPresenter.swift */; };
+		4327892529EFFD4A00A653AB /* RemoveOwnBuildingRouter.swift in Sources */ = {isa = PBXBuildFile; fileRef = 4327892129EFFD4A00A653AB /* RemoveOwnBuildingRouter.swift */; };
+		4327892629EFFD4A00A653AB /* RemoveOwnBuildingViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 4327892229EFFD4A00A653AB /* RemoveOwnBuildingViewController.swift */; };
+		4327892729EFFD4A00A653AB /* RemoveOwnBuildingInteractor.swift in Sources */ = {isa = PBXBuildFile; fileRef = 4327892329EFFD4A00A653AB /* RemoveOwnBuildingInteractor.swift */; };
+		4327892929F00AC000A653AB /* CustomCollectionViewCell.swift in Sources */ = {isa = PBXBuildFile; fileRef = 4327892829F00AC000A653AB /* CustomCollectionViewCell.swift */; };
+		432EC2152A02169A00501791 /* RemoveOwnBuildingEntity.swift in Sources */ = {isa = PBXBuildFile; fileRef = 432EC2142A02169A00501791 /* RemoveOwnBuildingEntity.swift */; };
+		432EC2172A021C9300501791 /* AddOwnBuildingEntity.swift in Sources */ = {isa = PBXBuildFile; fileRef = 432EC2162A021C9300501791 /* AddOwnBuildingEntity.swift */; };
+		435F708829FA44DC001402A2 /* SPTableViewCellPresenter.swift in Sources */ = {isa = PBXBuildFile; fileRef = 435F708429FA44DC001402A2 /* SPTableViewCellPresenter.swift */; };
+		435F708929FA44DC001402A2 /* SPTableViewCellRouter.swift in Sources */ = {isa = PBXBuildFile; fileRef = 435F708529FA44DC001402A2 /* SPTableViewCellRouter.swift */; };
+		435F708A29FA44DC001402A2 /* SPTableViewCell.swift in Sources */ = {isa = PBXBuildFile; fileRef = 435F708629FA44DC001402A2 /* SPTableViewCell.swift */; };
+		435F708B29FA44DC001402A2 /* SPTableViewCellInteractor.swift in Sources */ = {isa = PBXBuildFile; fileRef = 435F708729FA44DC001402A2 /* SPTableViewCellInteractor.swift */; };
+		4365475F29EF0D02007E9BB7 /* AppDelegate.swift in Sources */ = {isa = PBXBuildFile; fileRef = 4365475E29EF0D02007E9BB7 /* AppDelegate.swift */; };
+		4365476129EF0D02007E9BB7 /* SceneDelegate.swift in Sources */ = {isa = PBXBuildFile; fileRef = 4365476029EF0D02007E9BB7 /* SceneDelegate.swift */; };
+		4365476929EF0D02007E9BB7 /* RoomBookingApp.xcdatamodeld in Sources */ = {isa = PBXBuildFile; fileRef = 4365476729EF0D02007E9BB7 /* RoomBookingApp.xcdatamodeld */; };
+		4365476B29EF0D03007E9BB7 /* Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = 4365476A29EF0D03007E9BB7 /* Assets.xcassets */; };
+		4365476E29EF0D03007E9BB7 /* LaunchScreen.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = 4365476C29EF0D03007E9BB7 /* LaunchScreen.storyboard */; };
+		4365477929EF0D04007E9BB7 /* RoomBookingAppTests.swift in Sources */ = {isa = PBXBuildFile; fileRef = 4365477829EF0D04007E9BB7 /* RoomBookingAppTests.swift */; };
+		4365478329EF0D04007E9BB7 /* RoomBookingAppUITests.swift in Sources */ = {isa = PBXBuildFile; fileRef = 4365478229EF0D04007E9BB7 /* RoomBookingAppUITests.swift */; };
+		4365478529EF0D04007E9BB7 /* RoomBookingAppUITestsLaunchTests.swift in Sources */ = {isa = PBXBuildFile; fileRef = 4365478429EF0D04007E9BB7 /* RoomBookingAppUITestsLaunchTests.swift */; };
+		436547CC29EF0DAB007E9BB7 /* MyTableViewCell.xib in Resources */ = {isa = PBXBuildFile; fileRef = 4365479629EF0DAB007E9BB7 /* MyTableViewCell.xib */; };
+		436547CD29EF0DAB007E9BB7 /* HomePagePresenter.swift in Sources */ = {isa = PBXBuildFile; fileRef = 4365479729EF0DAB007E9BB7 /* HomePagePresenter.swift */; };
+		436547CE29EF0DAB007E9BB7 /* HomePageRouter.swift in Sources */ = {isa = PBXBuildFile; fileRef = 4365479829EF0DAB007E9BB7 /* HomePageRouter.swift */; };
+		436547CF29EF0DAB007E9BB7 /* HomePageInteractor.swift in Sources */ = {isa = PBXBuildFile; fileRef = 4365479929EF0DAB007E9BB7 /* HomePageInteractor.swift */; };
+		436547D029EF0DAB007E9BB7 /* MyCollectionViewCell.xib in Resources */ = {isa = PBXBuildFile; fileRef = 4365479B29EF0DAB007E9BB7 /* MyCollectionViewCell.xib */; };
+		436547D229EF0DAB007E9BB7 /* HomePageViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 4365479D29EF0DAB007E9BB7 /* HomePageViewController.swift */; };
+		436547D329EF0DAB007E9BB7 /* HomePageEntity.swift in Sources */ = {isa = PBXBuildFile; fileRef = 4365479E29EF0DAB007E9BB7 /* HomePageEntity.swift */; };
+		436547D429EF0DAB007E9BB7 /* SignUpViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 436547A029EF0DAB007E9BB7 /* SignUpViewController.swift */; };
+		436547D529EF0DAB007E9BB7 /* SignUpRouter.swift in Sources */ = {isa = PBXBuildFile; fileRef = 436547A129EF0DAB007E9BB7 /* SignUpRouter.swift */; };
+		436547D629EF0DAB007E9BB7 /* SignUpInteractor.swift in Sources */ = {isa = PBXBuildFile; fileRef = 436547A229EF0DAB007E9BB7 /* SignUpInteractor.swift */; };
+		436547D729EF0DAB007E9BB7 /* SignUpEntity.swift in Sources */ = {isa = PBXBuildFile; fileRef = 436547A329EF0DAB007E9BB7 /* SignUpEntity.swift */; };
+		436547D829EF0DAB007E9BB7 /* SignUpViewController.xib in Resources */ = {isa = PBXBuildFile; fileRef = 436547A429EF0DAB007E9BB7 /* SignUpViewController.xib */; };
+		436547D929EF0DAB007E9BB7 /* SignUpPresenter.swift in Sources */ = {isa = PBXBuildFile; fileRef = 436547A529EF0DAB007E9BB7 /* SignUpPresenter.swift */; };
+		436547DA29EF0DAB007E9BB7 /* DashBoardTabbarController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 436547A729EF0DAB007E9BB7 /* DashBoardTabbarController.swift */; };
+		436547DB29EF0DAB007E9BB7 /* DashBoardTabBarInteractor.swift in Sources */ = {isa = PBXBuildFile; fileRef = 436547A829EF0DAB007E9BB7 /* DashBoardTabBarInteractor.swift */; };
+		436547DC29EF0DAB007E9BB7 /* DashBoardTabBarRouter.swift in Sources */ = {isa = PBXBuildFile; fileRef = 436547A929EF0DAB007E9BB7 /* DashBoardTabBarRouter.swift */; };
+		436547DD29EF0DAB007E9BB7 /* DashBoardTabBarPresenter.swift in Sources */ = {isa = PBXBuildFile; fileRef = 436547AA29EF0DAB007E9BB7 /* DashBoardTabBarPresenter.swift */; };
+		436547DE29EF0DAB007E9BB7 /* SignInPresenter.swift in Sources */ = {isa = PBXBuildFile; fileRef = 436547AC29EF0DAB007E9BB7 /* SignInPresenter.swift */; };
+		436547DF29EF0DAB007E9BB7 /* SignInInteractor.swift in Sources */ = {isa = PBXBuildFile; fileRef = 436547AD29EF0DAB007E9BB7 /* SignInInteractor.swift */; };
+		436547E029EF0DAB007E9BB7 /* SignInRouter.swift in Sources */ = {isa = PBXBuildFile; fileRef = 436547AE29EF0DAB007E9BB7 /* SignInRouter.swift */; };
+		436547E129EF0DAB007E9BB7 /* Main.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = 436547AF29EF0DAB007E9BB7 /* Main.storyboard */; };
+		436547E229EF0DAB007E9BB7 /* SignInEntity.swift in Sources */ = {isa = PBXBuildFile; fileRef = 436547B129EF0DAB007E9BB7 /* SignInEntity.swift */; };
+		436547E329EF0DAB007E9BB7 /* SignInViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 436547B229EF0DAB007E9BB7 /* SignInViewController.swift */; };
+		436547E429EF0DAB007E9BB7 /* RoomBookingPageEntity.swift in Sources */ = {isa = PBXBuildFile; fileRef = 436547B429EF0DAB007E9BB7 /* RoomBookingPageEntity.swift */; };
+		436547E529EF0DAB007E9BB7 /* RoomBookingPagePresenter.swift in Sources */ = {isa = PBXBuildFile; fileRef = 436547B529EF0DAB007E9BB7 /* RoomBookingPagePresenter.swift */; };
+		436547E629EF0DAB007E9BB7 /* RoomBookingPageViewController.xib in Resources */ = {isa = PBXBuildFile; fileRef = 436547B629EF0DAB007E9BB7 /* RoomBookingPageViewController.xib */; };
+		436547E729EF0DAB007E9BB7 /* RoomBookingPageRouter.swift in Sources */ = {isa = PBXBuildFile; fileRef = 436547B729EF0DAB007E9BB7 /* RoomBookingPageRouter.swift */; };
+		436547E829EF0DAB007E9BB7 /* RoomBookingPageInteractor.swift in Sources */ = {isa = PBXBuildFile; fileRef = 436547B829EF0DAB007E9BB7 /* RoomBookingPageInteractor.swift */; };
+		436547E929EF0DAB007E9BB7 /* RoomBookingPageViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 436547B929EF0DAB007E9BB7 /* RoomBookingPageViewController.swift */; };
+		436547EB29EF0DAB007E9BB7 /* AddMeetingTabBarInteractor.swift in Sources */ = {isa = PBXBuildFile; fileRef = 436547BC29EF0DAB007E9BB7 /* AddMeetingTabBarInteractor.swift */; };
+		436547EC29EF0DAB007E9BB7 /* AddMeetingTabBarViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 436547BD29EF0DAB007E9BB7 /* AddMeetingTabBarViewController.swift */; };
+		436547ED29EF0DAB007E9BB7 /* AddMeetingTabBarPresenter.swift in Sources */ = {isa = PBXBuildFile; fileRef = 436547BE29EF0DAB007E9BB7 /* AddMeetingTabBarPresenter.swift */; };
+		436547EE29EF0DAB007E9BB7 /* StatusPageEntity.swift in Sources */ = {isa = PBXBuildFile; fileRef = 436547C029EF0DAB007E9BB7 /* StatusPageEntity.swift */; };
+		436547EF29EF0DAB007E9BB7 /* StatusPagePresenter.swift in Sources */ = {isa = PBXBuildFile; fileRef = 436547C129EF0DAB007E9BB7 /* StatusPagePresenter.swift */; };
+		436547F029EF0DAB007E9BB7 /* StatusPageViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 436547C229EF0DAB007E9BB7 /* StatusPageViewController.swift */; };
+		436547F129EF0DAB007E9BB7 /* StatusPageInteractor.swift in Sources */ = {isa = PBXBuildFile; fileRef = 436547C329EF0DAB007E9BB7 /* StatusPageInteractor.swift */; };
+		436547F229EF0DAB007E9BB7 /* StatusPageRouter.swift in Sources */ = {isa = PBXBuildFile; fileRef = 436547C429EF0DAB007E9BB7 /* StatusPageRouter.swift */; };
+		436547F329EF0DAB007E9BB7 /* ProfilePageViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 436547C629EF0DAB007E9BB7 /* ProfilePageViewController.swift */; };
+		436547F429EF0DAB007E9BB7 /* ProfilePagePresenter.swift in Sources */ = {isa = PBXBuildFile; fileRef = 436547C729EF0DAB007E9BB7 /* ProfilePagePresenter.swift */; };
+		436547F529EF0DAB007E9BB7 /* ProfilePageRouter.swift in Sources */ = {isa = PBXBuildFile; fileRef = 436547C829EF0DAB007E9BB7 /* ProfilePageRouter.swift */; };
+		436547F629EF0DAB007E9BB7 /* ProfilePageInteractor.swift in Sources */ = {isa = PBXBuildFile; fileRef = 436547C929EF0DAB007E9BB7 /* ProfilePageInteractor.swift */; };
+		436547FA29EF0E5D007E9BB7 /* CoreDataManager.swift in Sources */ = {isa = PBXBuildFile; fileRef = 436547F829EF0E5D007E9BB7 /* CoreDataManager.swift */; };
+		4365480D29EF13BF007E9BB7 /* Floor+CoreDataClass.swift in Sources */ = {isa = PBXBuildFile; fileRef = 4365480729EF13BF007E9BB7 /* Floor+CoreDataClass.swift */; };
+		4365480E29EF13BF007E9BB7 /* Floor+CoreDataProperties.swift in Sources */ = {isa = PBXBuildFile; fileRef = 4365480829EF13BF007E9BB7 /* Floor+CoreDataProperties.swift */; };
+		4365480F29EF13BF007E9BB7 /* Room+CoreDataClass.swift in Sources */ = {isa = PBXBuildFile; fileRef = 4365480929EF13BF007E9BB7 /* Room+CoreDataClass.swift */; };
+		4365481029EF13BF007E9BB7 /* Room+CoreDataProperties.swift in Sources */ = {isa = PBXBuildFile; fileRef = 4365480A29EF13BF007E9BB7 /* Room+CoreDataProperties.swift */; };
+		4365481129EF13BF007E9BB7 /* Building+CoreDataClass.swift in Sources */ = {isa = PBXBuildFile; fileRef = 4365480B29EF13BF007E9BB7 /* Building+CoreDataClass.swift */; };
+		4365481229EF13BF007E9BB7 /* Building+CoreDataProperties.swift in Sources */ = {isa = PBXBuildFile; fileRef = 4365480C29EF13BF007E9BB7 /* Building+CoreDataProperties.swift */; };
+		439043D829FA3F8A00841828 /* SPCollectionViewCellPresenter.swift in Sources */ = {isa = PBXBuildFile; fileRef = 439043D429FA3F8A00841828 /* SPCollectionViewCellPresenter.swift */; };
+		439043D929FA3F8A00841828 /* SPCollectionViewCellRouter.swift in Sources */ = {isa = PBXBuildFile; fileRef = 439043D529FA3F8A00841828 /* SPCollectionViewCellRouter.swift */; };
+		439043DA29FA3F8A00841828 /* SPCollectionViewCell.swift in Sources */ = {isa = PBXBuildFile; fileRef = 439043D629FA3F8A00841828 /* SPCollectionViewCell.swift */; };
+		439043DB29FA3F8A00841828 /* SPCollectionViewCellInteractor.swift in Sources */ = {isa = PBXBuildFile; fileRef = 439043D729FA3F8A00841828 /* SPCollectionViewCellInteractor.swift */; };
+		43BAEC6029F2408D00F44C74 /* DirectRoomBookingPresenter.swift in Sources */ = {isa = PBXBuildFile; fileRef = 43BAEC5C29F2408D00F44C74 /* DirectRoomBookingPresenter.swift */; };
+		43BAEC6129F2408D00F44C74 /* DirectRoomBookingRouter.swift in Sources */ = {isa = PBXBuildFile; fileRef = 43BAEC5D29F2408D00F44C74 /* DirectRoomBookingRouter.swift */; };
+		43BAEC6229F2408D00F44C74 /* DirectRoomBookingViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 43BAEC5E29F2408D00F44C74 /* DirectRoomBookingViewController.swift */; };
+		43BAEC6329F2408D00F44C74 /* DirectRoomBookingInteractor.swift in Sources */ = {isa = PBXBuildFile; fileRef = 43BAEC5F29F2408D00F44C74 /* DirectRoomBookingInteractor.swift */; };
+		43EECE4D29F5915F004A4565 /* AddMeetingTabBarRouter.swift in Sources */ = {isa = PBXBuildFile; fileRef = 436547BB29EF0DAB007E9BB7 /* AddMeetingTabBarRouter.swift */; };
+/* End PBXBuildFile section */
+
+/* Begin PBXContainerItemProxy section */
+		4365477529EF0D04007E9BB7 /* PBXContainerItemProxy */ = {
+			isa = PBXContainerItemProxy;
+			containerPortal = 4365475329EF0D02007E9BB7 /* Project object */;
+			proxyType = 1;
+			remoteGlobalIDString = 4365475A29EF0D02007E9BB7;
+			remoteInfo = RoomBookingApp;
+		};
+		4365477F29EF0D04007E9BB7 /* PBXContainerItemProxy */ = {
+			isa = PBXContainerItemProxy;
+			containerPortal = 4365475329EF0D02007E9BB7 /* Project object */;
+			proxyType = 1;
+			remoteGlobalIDString = 4365475A29EF0D02007E9BB7;
+			remoteInfo = RoomBookingApp;
+		};
+/* End PBXContainerItemProxy section */
+
+/* Begin PBXFileReference section */
+		4327891829EFFD2800A653AB /* AddOwnBuildingPresenter.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AddOwnBuildingPresenter.swift; sourceTree = "<group>"; };
+		4327891929EFFD2800A653AB /* AddOwnBuildingRouter.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AddOwnBuildingRouter.swift; sourceTree = "<group>"; };
+		4327891A29EFFD2800A653AB /* AddOwnBuildingViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AddOwnBuildingViewController.swift; sourceTree = "<group>"; };
+		4327891B29EFFD2800A653AB /* AddOwnBuildingInteractor.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AddOwnBuildingInteractor.swift; sourceTree = "<group>"; };
+		4327892029EFFD4A00A653AB /* RemoveOwnBuildingPresenter.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = RemoveOwnBuildingPresenter.swift; sourceTree = "<group>"; };
+		4327892129EFFD4A00A653AB /* RemoveOwnBuildingRouter.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = RemoveOwnBuildingRouter.swift; sourceTree = "<group>"; };
+		4327892229EFFD4A00A653AB /* RemoveOwnBuildingViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = RemoveOwnBuildingViewController.swift; sourceTree = "<group>"; };
+		4327892329EFFD4A00A653AB /* RemoveOwnBuildingInteractor.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = RemoveOwnBuildingInteractor.swift; sourceTree = "<group>"; };
+		4327892829F00AC000A653AB /* CustomCollectionViewCell.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = CustomCollectionViewCell.swift; sourceTree = "<group>"; };
+		432EC2142A02169A00501791 /* RemoveOwnBuildingEntity.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = RemoveOwnBuildingEntity.swift; sourceTree = "<group>"; };
+		432EC2162A021C9300501791 /* AddOwnBuildingEntity.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AddOwnBuildingEntity.swift; sourceTree = "<group>"; };
+		435F708429FA44DC001402A2 /* SPTableViewCellPresenter.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = SPTableViewCellPresenter.swift; sourceTree = "<group>"; };
+		435F708529FA44DC001402A2 /* SPTableViewCellRouter.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = SPTableViewCellRouter.swift; sourceTree = "<group>"; };
+		435F708629FA44DC001402A2 /* SPTableViewCell.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = SPTableViewCell.swift; sourceTree = "<group>"; };
+		435F708729FA44DC001402A2 /* SPTableViewCellInteractor.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = SPTableViewCellInteractor.swift; sourceTree = "<group>"; };
+		4365475B29EF0D02007E9BB7 /* RoomBookingApp.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = RoomBookingApp.app; sourceTree = BUILT_PRODUCTS_DIR; };
+		4365475E29EF0D02007E9BB7 /* AppDelegate.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AppDelegate.swift; sourceTree = "<group>"; };
+		4365476029EF0D02007E9BB7 /* SceneDelegate.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = SceneDelegate.swift; sourceTree = "<group>"; };
+		4365476829EF0D02007E9BB7 /* RoomBookingApp.xcdatamodel */ = {isa = PBXFileReference; lastKnownFileType = wrapper.xcdatamodel; path = RoomBookingApp.xcdatamodel; sourceTree = "<group>"; };
+		4365476A29EF0D03007E9BB7 /* Assets.xcassets */ = {isa = PBXFileReference; lastKnownFileType = folder.assetcatalog; path = Assets.xcassets; sourceTree = "<group>"; };
+		4365476D29EF0D03007E9BB7 /* Base */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; name = Base; path = Base.lproj/LaunchScreen.storyboard; sourceTree = "<group>"; };
+		4365476F29EF0D03007E9BB7 /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
+		4365477429EF0D04007E9BB7 /* RoomBookingAppTests.xctest */ = {isa = PBXFileReference; explicitFileType = wrapper.cfbundle; includeInIndex = 0; path = RoomBookingAppTests.xctest; sourceTree = BUILT_PRODUCTS_DIR; };
+		4365477829EF0D04007E9BB7 /* RoomBookingAppTests.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = RoomBookingAppTests.swift; sourceTree = "<group>"; };
+		4365477E29EF0D04007E9BB7 /* RoomBookingAppUITests.xctest */ = {isa = PBXFileReference; explicitFileType = wrapper.cfbundle; includeInIndex = 0; path = RoomBookingAppUITests.xctest; sourceTree = BUILT_PRODUCTS_DIR; };
+		4365478229EF0D04007E9BB7 /* RoomBookingAppUITests.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = RoomBookingAppUITests.swift; sourceTree = "<group>"; };
+		4365478429EF0D04007E9BB7 /* RoomBookingAppUITestsLaunchTests.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = RoomBookingAppUITestsLaunchTests.swift; sourceTree = "<group>"; };
+		4365479629EF0DAB007E9BB7 /* MyTableViewCell.xib */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = file.xib; path = MyTableViewCell.xib; sourceTree = "<group>"; };
+		4365479729EF0DAB007E9BB7 /* HomePagePresenter.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = HomePagePresenter.swift; sourceTree = "<group>"; };
+		4365479829EF0DAB007E9BB7 /* HomePageRouter.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = HomePageRouter.swift; sourceTree = "<group>"; };
+		4365479929EF0DAB007E9BB7 /* HomePageInteractor.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = HomePageInteractor.swift; sourceTree = "<group>"; };
+		4365479B29EF0DAB007E9BB7 /* MyCollectionViewCell.xib */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = file.xib; path = MyCollectionViewCell.xib; sourceTree = "<group>"; };
+		4365479D29EF0DAB007E9BB7 /* HomePageViewController.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = HomePageViewController.swift; sourceTree = "<group>"; };
+		4365479E29EF0DAB007E9BB7 /* HomePageEntity.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = HomePageEntity.swift; sourceTree = "<group>"; };
+		436547A029EF0DAB007E9BB7 /* SignUpViewController.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = SignUpViewController.swift; sourceTree = "<group>"; };
+		436547A129EF0DAB007E9BB7 /* SignUpRouter.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = SignUpRouter.swift; sourceTree = "<group>"; };
+		436547A229EF0DAB007E9BB7 /* SignUpInteractor.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = SignUpInteractor.swift; sourceTree = "<group>"; };
+		436547A329EF0DAB007E9BB7 /* SignUpEntity.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = SignUpEntity.swift; sourceTree = "<group>"; };
+		436547A429EF0DAB007E9BB7 /* SignUpViewController.xib */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = file.xib; path = SignUpViewController.xib; sourceTree = "<group>"; };
+		436547A529EF0DAB007E9BB7 /* SignUpPresenter.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = SignUpPresenter.swift; sourceTree = "<group>"; };
+		436547A729EF0DAB007E9BB7 /* DashBoardTabbarController.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = DashBoardTabbarController.swift; sourceTree = "<group>"; };
+		436547A829EF0DAB007E9BB7 /* DashBoardTabBarInteractor.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = DashBoardTabBarInteractor.swift; sourceTree = "<group>"; };
+		436547A929EF0DAB007E9BB7 /* DashBoardTabBarRouter.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = DashBoardTabBarRouter.swift; sourceTree = "<group>"; };
+		436547AA29EF0DAB007E9BB7 /* DashBoardTabBarPresenter.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = DashBoardTabBarPresenter.swift; sourceTree = "<group>"; };
+		436547AC29EF0DAB007E9BB7 /* SignInPresenter.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = SignInPresenter.swift; sourceTree = "<group>"; };
+		436547AD29EF0DAB007E9BB7 /* SignInInteractor.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = SignInInteractor.swift; sourceTree = "<group>"; };
+		436547AE29EF0DAB007E9BB7 /* SignInRouter.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = SignInRouter.swift; sourceTree = "<group>"; };
+		436547B029EF0DAB007E9BB7 /* Base */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; name = Base; path = Base.lproj/Main.storyboard; sourceTree = "<group>"; };
+		436547B129EF0DAB007E9BB7 /* SignInEntity.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = SignInEntity.swift; sourceTree = "<group>"; };
+		436547B229EF0DAB007E9BB7 /* SignInViewController.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = SignInViewController.swift; sourceTree = "<group>"; };
+		436547B429EF0DAB007E9BB7 /* RoomBookingPageEntity.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = RoomBookingPageEntity.swift; sourceTree = "<group>"; };
+		436547B529EF0DAB007E9BB7 /* RoomBookingPagePresenter.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = RoomBookingPagePresenter.swift; sourceTree = "<group>"; };
+		436547B629EF0DAB007E9BB7 /* RoomBookingPageViewController.xib */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = file.xib; path = RoomBookingPageViewController.xib; sourceTree = "<group>"; };
+		436547B729EF0DAB007E9BB7 /* RoomBookingPageRouter.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = RoomBookingPageRouter.swift; sourceTree = "<group>"; };
+		436547B829EF0DAB007E9BB7 /* RoomBookingPageInteractor.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = RoomBookingPageInteractor.swift; sourceTree = "<group>"; };
+		436547B929EF0DAB007E9BB7 /* RoomBookingPageViewController.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = RoomBookingPageViewController.swift; sourceTree = "<group>"; };
+		436547BB29EF0DAB007E9BB7 /* AddMeetingTabBarRouter.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = AddMeetingTabBarRouter.swift; sourceTree = "<group>"; };
+		436547BC29EF0DAB007E9BB7 /* AddMeetingTabBarInteractor.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = AddMeetingTabBarInteractor.swift; sourceTree = "<group>"; };
+		436547BD29EF0DAB007E9BB7 /* AddMeetingTabBarViewController.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = AddMeetingTabBarViewController.swift; sourceTree = "<group>"; };
+		436547BE29EF0DAB007E9BB7 /* AddMeetingTabBarPresenter.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = AddMeetingTabBarPresenter.swift; sourceTree = "<group>"; };
+		436547C029EF0DAB007E9BB7 /* StatusPageEntity.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = StatusPageEntity.swift; sourceTree = "<group>"; };
+		436547C129EF0DAB007E9BB7 /* StatusPagePresenter.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = StatusPagePresenter.swift; sourceTree = "<group>"; };
+		436547C229EF0DAB007E9BB7 /* StatusPageViewController.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = StatusPageViewController.swift; sourceTree = "<group>"; };
+		436547C329EF0DAB007E9BB7 /* StatusPageInteractor.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = StatusPageInteractor.swift; sourceTree = "<group>"; };
+		436547C429EF0DAB007E9BB7 /* StatusPageRouter.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = StatusPageRouter.swift; sourceTree = "<group>"; };
+		436547C629EF0DAB007E9BB7 /* ProfilePageViewController.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = ProfilePageViewController.swift; sourceTree = "<group>"; };
+		436547C729EF0DAB007E9BB7 /* ProfilePagePresenter.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = ProfilePagePresenter.swift; sourceTree = "<group>"; };
+		436547C829EF0DAB007E9BB7 /* ProfilePageRouter.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = ProfilePageRouter.swift; sourceTree = "<group>"; };
+		436547C929EF0DAB007E9BB7 /* ProfilePageInteractor.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = ProfilePageInteractor.swift; sourceTree = "<group>"; };
+		436547F829EF0E5D007E9BB7 /* CoreDataManager.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = CoreDataManager.swift; sourceTree = "<group>"; };
+		4365480729EF13BF007E9BB7 /* Floor+CoreDataClass.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = "Floor+CoreDataClass.swift"; sourceTree = "<group>"; };
+		4365480829EF13BF007E9BB7 /* Floor+CoreDataProperties.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = "Floor+CoreDataProperties.swift"; sourceTree = "<group>"; };
+		4365480929EF13BF007E9BB7 /* Room+CoreDataClass.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = "Room+CoreDataClass.swift"; sourceTree = "<group>"; };
+		4365480A29EF13BF007E9BB7 /* Room+CoreDataProperties.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = "Room+CoreDataProperties.swift"; sourceTree = "<group>"; };
+		4365480B29EF13BF007E9BB7 /* Building+CoreDataClass.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = "Building+CoreDataClass.swift"; sourceTree = "<group>"; };
+		4365480C29EF13BF007E9BB7 /* Building+CoreDataProperties.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = "Building+CoreDataProperties.swift"; sourceTree = "<group>"; };
+		439043D429FA3F8A00841828 /* SPCollectionViewCellPresenter.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = SPCollectionViewCellPresenter.swift; sourceTree = "<group>"; };
+		439043D529FA3F8A00841828 /* SPCollectionViewCellRouter.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = SPCollectionViewCellRouter.swift; sourceTree = "<group>"; };
+		439043D629FA3F8A00841828 /* SPCollectionViewCell.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = SPCollectionViewCell.swift; sourceTree = "<group>"; };
+		439043D729FA3F8A00841828 /* SPCollectionViewCellInteractor.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = SPCollectionViewCellInteractor.swift; sourceTree = "<group>"; };
+		43BAEC5C29F2408D00F44C74 /* DirectRoomBookingPresenter.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = DirectRoomBookingPresenter.swift; sourceTree = "<group>"; };
+		43BAEC5D29F2408D00F44C74 /* DirectRoomBookingRouter.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = DirectRoomBookingRouter.swift; sourceTree = "<group>"; };
+		43BAEC5E29F2408D00F44C74 /* DirectRoomBookingViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = DirectRoomBookingViewController.swift; sourceTree = "<group>"; };
+		43BAEC5F29F2408D00F44C74 /* DirectRoomBookingInteractor.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = DirectRoomBookingInteractor.swift; sourceTree = "<group>"; };
+/* End PBXFileReference section */
+
+/* Begin PBXFrameworksBuildPhase section */
+		4365475829EF0D02007E9BB7 /* Frameworks */ = {
+			isa = PBXFrameworksBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+		4365477129EF0D04007E9BB7 /* Frameworks */ = {
+			isa = PBXFrameworksBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+		4365477B29EF0D04007E9BB7 /* Frameworks */ = {
+			isa = PBXFrameworksBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+/* End PBXFrameworksBuildPhase section */
+
+/* Begin PBXGroup section */
+		4327891529EFE58100A653AB /* DataFile */ = {
+			isa = PBXGroup;
+			children = (
+				436547F829EF0E5D007E9BB7 /* CoreDataManager.swift */,
+				4365480729EF13BF007E9BB7 /* Floor+CoreDataClass.swift */,
+				4365480829EF13BF007E9BB7 /* Floor+CoreDataProperties.swift */,
+				4365480929EF13BF007E9BB7 /* Room+CoreDataClass.swift */,
+				4365480A29EF13BF007E9BB7 /* Room+CoreDataProperties.swift */,
+				4365480B29EF13BF007E9BB7 /* Building+CoreDataClass.swift */,
+				4365480C29EF13BF007E9BB7 /* Building+CoreDataProperties.swift */,
+			);
+			path = DataFile;
+			sourceTree = "<group>";
+		};
+		4327891629EFFCEF00A653AB /* AddBuilding */ = {
+			isa = PBXGroup;
+			children = (
+				4327891829EFFD2800A653AB /* AddOwnBuildingPresenter.swift */,
+				4327891929EFFD2800A653AB /* AddOwnBuildingRouter.swift */,
+				4327891A29EFFD2800A653AB /* AddOwnBuildingViewController.swift */,
+				4327891B29EFFD2800A653AB /* AddOwnBuildingInteractor.swift */,
+				432EC2162A021C9300501791 /* AddOwnBuildingEntity.swift */,
+			);
+			path = AddBuilding;
+			sourceTree = "<group>";
+		};
+		4327891729EFFD0700A653AB /* RemoveBuilding */ = {
+			isa = PBXGroup;
+			children = (
+				4327892029EFFD4A00A653AB /* RemoveOwnBuildingPresenter.swift */,
+				4327892129EFFD4A00A653AB /* RemoveOwnBuildingRouter.swift */,
+				4327892229EFFD4A00A653AB /* RemoveOwnBuildingViewController.swift */,
+				4327892329EFFD4A00A653AB /* RemoveOwnBuildingInteractor.swift */,
+				432EC2142A02169A00501791 /* RemoveOwnBuildingEntity.swift */,
+			);
+			path = RemoveBuilding;
+			sourceTree = "<group>";
+		};
+		4365475229EF0D02007E9BB7 = {
+			isa = PBXGroup;
+			children = (
+				4365479129EF0DAB007E9BB7 /* Modules */,
+				4365475D29EF0D02007E9BB7 /* RoomBookingApp */,
+				4365477729EF0D04007E9BB7 /* RoomBookingAppTests */,
+				4365478129EF0D04007E9BB7 /* RoomBookingAppUITests */,
+				4365475C29EF0D02007E9BB7 /* Products */,
+			);
+			sourceTree = "<group>";
+		};
+		4365475C29EF0D02007E9BB7 /* Products */ = {
+			isa = PBXGroup;
+			children = (
+				4365475B29EF0D02007E9BB7 /* RoomBookingApp.app */,
+				4365477429EF0D04007E9BB7 /* RoomBookingAppTests.xctest */,
+				4365477E29EF0D04007E9BB7 /* RoomBookingAppUITests.xctest */,
+			);
+			name = Products;
+			sourceTree = "<group>";
+		};
+		4365475D29EF0D02007E9BB7 /* RoomBookingApp */ = {
+			isa = PBXGroup;
+			children = (
+				4365475E29EF0D02007E9BB7 /* AppDelegate.swift */,
+				4365476029EF0D02007E9BB7 /* SceneDelegate.swift */,
+				4365476A29EF0D03007E9BB7 /* Assets.xcassets */,
+				4365476C29EF0D03007E9BB7 /* LaunchScreen.storyboard */,
+				4365476F29EF0D03007E9BB7 /* Info.plist */,
+				4365476729EF0D02007E9BB7 /* RoomBookingApp.xcdatamodeld */,
+			);
+			path = RoomBookingApp;
+			sourceTree = "<group>";
+		};
+		4365477729EF0D04007E9BB7 /* RoomBookingAppTests */ = {
+			isa = PBXGroup;
+			children = (
+				4365477829EF0D04007E9BB7 /* RoomBookingAppTests.swift */,
+			);
+			path = RoomBookingAppTests;
+			sourceTree = "<group>";
+		};
+		4365478129EF0D04007E9BB7 /* RoomBookingAppUITests */ = {
+			isa = PBXGroup;
+			children = (
+				4365478229EF0D04007E9BB7 /* RoomBookingAppUITests.swift */,
+				4365478429EF0D04007E9BB7 /* RoomBookingAppUITestsLaunchTests.swift */,
+			);
+			path = RoomBookingAppUITests;
+			sourceTree = "<group>";
+		};
+		4365479129EF0DAB007E9BB7 /* Modules */ = {
+			isa = PBXGroup;
+			children = (
+				436547AB29EF0DAB007E9BB7 /* SignIn */,
+				4365479F29EF0DAB007E9BB7 /* SignUp */,
+				436547A629EF0DAB007E9BB7 /* DashBoard */,
+				4365479329EF0DAB007E9BB7 /* HomePage */,
+				43BAEC5B29F2404B00F44C74 /* DirectRoomBooking */,
+				436547C529EF0DAB007E9BB7 /* ProfilePage */,
+				4327891629EFFCEF00A653AB /* AddBuilding */,
+				4327891729EFFD0700A653AB /* RemoveBuilding */,
+				436547BA29EF0DAB007E9BB7 /* AddMeetingTabBar */,
+				436547B329EF0DAB007E9BB7 /* RoomBookingPage */,
+				436547BF29EF0DAB007E9BB7 /* StatusPage */,
+				4327891529EFE58100A653AB /* DataFile */,
+			);
+			path = Modules;
+			sourceTree = "<group>";
+		};
+		4365479329EF0DAB007E9BB7 /* HomePage */ = {
+			isa = PBXGroup;
+			children = (
+				4365479729EF0DAB007E9BB7 /* HomePagePresenter.swift */,
+				4365479829EF0DAB007E9BB7 /* HomePageRouter.swift */,
+				4365479929EF0DAB007E9BB7 /* HomePageInteractor.swift */,
+				4365479D29EF0DAB007E9BB7 /* HomePageViewController.swift */,
+				4365479E29EF0DAB007E9BB7 /* HomePageEntity.swift */,
+				4365479429EF0DAB007E9BB7 /* TableCell */,
+				4365479A29EF0DAB007E9BB7 /* CollectionCell */,
+			);
+			path = HomePage;
+			sourceTree = "<group>";
+		};
+		4365479429EF0DAB007E9BB7 /* TableCell */ = {
+			isa = PBXGroup;
+			children = (
+				4365479629EF0DAB007E9BB7 /* MyTableViewCell.xib */,
+				435F708429FA44DC001402A2 /* SPTableViewCellPresenter.swift */,
+				435F708529FA44DC001402A2 /* SPTableViewCellRouter.swift */,
+				435F708629FA44DC001402A2 /* SPTableViewCell.swift */,
+				435F708729FA44DC001402A2 /* SPTableViewCellInteractor.swift */,
+			);
+			path = TableCell;
+			sourceTree = "<group>";
+		};
+		4365479A29EF0DAB007E9BB7 /* CollectionCell */ = {
+			isa = PBXGroup;
+			children = (
+				4365479B29EF0DAB007E9BB7 /* MyCollectionViewCell.xib */,
+				439043D429FA3F8A00841828 /* SPCollectionViewCellPresenter.swift */,
+				439043D529FA3F8A00841828 /* SPCollectionViewCellRouter.swift */,
+				439043D629FA3F8A00841828 /* SPCollectionViewCell.swift */,
+				439043D729FA3F8A00841828 /* SPCollectionViewCellInteractor.swift */,
+			);
+			path = CollectionCell;
+			sourceTree = "<group>";
+		};
+		4365479F29EF0DAB007E9BB7 /* SignUp */ = {
+			isa = PBXGroup;
+			children = (
+				436547A029EF0DAB007E9BB7 /* SignUpViewController.swift */,
+				436547A129EF0DAB007E9BB7 /* SignUpRouter.swift */,
+				436547A229EF0DAB007E9BB7 /* SignUpInteractor.swift */,
+				436547A329EF0DAB007E9BB7 /* SignUpEntity.swift */,
+				436547A429EF0DAB007E9BB7 /* SignUpViewController.xib */,
+				436547A529EF0DAB007E9BB7 /* SignUpPresenter.swift */,
+			);
+			path = SignUp;
+			sourceTree = "<group>";
+		};
+		436547A629EF0DAB007E9BB7 /* DashBoard */ = {
+			isa = PBXGroup;
+			children = (
+				436547A729EF0DAB007E9BB7 /* DashBoardTabbarController.swift */,
+				436547A829EF0DAB007E9BB7 /* DashBoardTabBarInteractor.swift */,
+				436547A929EF0DAB007E9BB7 /* DashBoardTabBarRouter.swift */,
+				436547AA29EF0DAB007E9BB7 /* DashBoardTabBarPresenter.swift */,
+			);
+			path = DashBoard;
+			sourceTree = "<group>";
+		};
+		436547AB29EF0DAB007E9BB7 /* SignIn */ = {
+			isa = PBXGroup;
+			children = (
+				436547AC29EF0DAB007E9BB7 /* SignInPresenter.swift */,
+				436547AD29EF0DAB007E9BB7 /* SignInInteractor.swift */,
+				436547AE29EF0DAB007E9BB7 /* SignInRouter.swift */,
+				436547AF29EF0DAB007E9BB7 /* Main.storyboard */,
+				436547B129EF0DAB007E9BB7 /* SignInEntity.swift */,
+				436547B229EF0DAB007E9BB7 /* SignInViewController.swift */,
+			);
+			path = SignIn;
+			sourceTree = "<group>";
+		};
+		436547B329EF0DAB007E9BB7 /* RoomBookingPage */ = {
+			isa = PBXGroup;
+			children = (
+				436547B429EF0DAB007E9BB7 /* RoomBookingPageEntity.swift */,
+				436547B529EF0DAB007E9BB7 /* RoomBookingPagePresenter.swift */,
+				436547B629EF0DAB007E9BB7 /* RoomBookingPageViewController.xib */,
+				436547B729EF0DAB007E9BB7 /* RoomBookingPageRouter.swift */,
+				436547B829EF0DAB007E9BB7 /* RoomBookingPageInteractor.swift */,
+				436547B929EF0DAB007E9BB7 /* RoomBookingPageViewController.swift */,
+			);
+			path = RoomBookingPage;
+			sourceTree = "<group>";
+		};
+		436547BA29EF0DAB007E9BB7 /* AddMeetingTabBar */ = {
+			isa = PBXGroup;
+			children = (
+				436547BC29EF0DAB007E9BB7 /* AddMeetingTabBarInteractor.swift */,
+				436547BB29EF0DAB007E9BB7 /* AddMeetingTabBarRouter.swift */,
+				436547BD29EF0DAB007E9BB7 /* AddMeetingTabBarViewController.swift */,
+				436547BE29EF0DAB007E9BB7 /* AddMeetingTabBarPresenter.swift */,
+			);
+			path = AddMeetingTabBar;
+			sourceTree = "<group>";
+		};
+		436547BF29EF0DAB007E9BB7 /* StatusPage */ = {
+			isa = PBXGroup;
+			children = (
+				436547C029EF0DAB007E9BB7 /* StatusPageEntity.swift */,
+				436547C129EF0DAB007E9BB7 /* StatusPagePresenter.swift */,
+				436547C229EF0DAB007E9BB7 /* StatusPageViewController.swift */,
+				436547C329EF0DAB007E9BB7 /* StatusPageInteractor.swift */,
+				436547C429EF0DAB007E9BB7 /* StatusPageRouter.swift */,
+				4327892829F00AC000A653AB /* CustomCollectionViewCell.swift */,
+			);
+			path = StatusPage;
+			sourceTree = "<group>";
+		};
+		436547C529EF0DAB007E9BB7 /* ProfilePage */ = {
+			isa = PBXGroup;
+			children = (
+				436547C629EF0DAB007E9BB7 /* ProfilePageViewController.swift */,
+				436547C729EF0DAB007E9BB7 /* ProfilePagePresenter.swift */,
+				436547C829EF0DAB007E9BB7 /* ProfilePageRouter.swift */,
+				436547C929EF0DAB007E9BB7 /* ProfilePageInteractor.swift */,
+			);
+			path = ProfilePage;
+			sourceTree = "<group>";
+		};
+		43BAEC5B29F2404B00F44C74 /* DirectRoomBooking */ = {
+			isa = PBXGroup;
+			children = (
+				43BAEC5C29F2408D00F44C74 /* DirectRoomBookingPresenter.swift */,
+				43BAEC5D29F2408D00F44C74 /* DirectRoomBookingRouter.swift */,
+				43BAEC5E29F2408D00F44C74 /* DirectRoomBookingViewController.swift */,
+				43BAEC5F29F2408D00F44C74 /* DirectRoomBookingInteractor.swift */,
+			);
+			path = DirectRoomBooking;
+			sourceTree = "<group>";
+		};
+/* End PBXGroup section */
+
+/* Begin PBXNativeTarget section */
+		4365475A29EF0D02007E9BB7 /* RoomBookingApp */ = {
+			isa = PBXNativeTarget;
+			buildConfigurationList = 4365478829EF0D04007E9BB7 /* Build configuration list for PBXNativeTarget "RoomBookingApp" */;
+			buildPhases = (
+				4365475729EF0D02007E9BB7 /* Sources */,
+				4365475829EF0D02007E9BB7 /* Frameworks */,
+				4365475929EF0D02007E9BB7 /* Resources */,
+			);
+			buildRules = (
+			);
+			dependencies = (
+			);
+			name = RoomBookingApp;
+			productName = RoomBookingApp;
+			productReference = 4365475B29EF0D02007E9BB7 /* RoomBookingApp.app */;
+			productType = "com.apple.product-type.application";
+		};
+		4365477329EF0D04007E9BB7 /* RoomBookingAppTests */ = {
+			isa = PBXNativeTarget;
+			buildConfigurationList = 4365478B29EF0D04007E9BB7 /* Build configuration list for PBXNativeTarget "RoomBookingAppTests" */;
+			buildPhases = (
+				4365477029EF0D04007E9BB7 /* Sources */,
+				4365477129EF0D04007E9BB7 /* Frameworks */,
+				4365477229EF0D04007E9BB7 /* Resources */,
+			);
+			buildRules = (
+			);
+			dependencies = (
+				4365477629EF0D04007E9BB7 /* PBXTargetDependency */,
+			);
+			name = RoomBookingAppTests;
+			productName = RoomBookingAppTests;
+			productReference = 4365477429EF0D04007E9BB7 /* RoomBookingAppTests.xctest */;
+			productType = "com.apple.product-type.bundle.unit-test";
+		};
+		4365477D29EF0D04007E9BB7 /* RoomBookingAppUITests */ = {
+			isa = PBXNativeTarget;
+			buildConfigurationList = 4365478E29EF0D04007E9BB7 /* Build configuration list for PBXNativeTarget "RoomBookingAppUITests" */;
+			buildPhases = (
+				4365477A29EF0D04007E9BB7 /* Sources */,
+				4365477B29EF0D04007E9BB7 /* Frameworks */,
+				4365477C29EF0D04007E9BB7 /* Resources */,
+			);
+			buildRules = (
+			);
+			dependencies = (
+				4365478029EF0D04007E9BB7 /* PBXTargetDependency */,
+			);
+			name = RoomBookingAppUITests;
+			productName = RoomBookingAppUITests;
+			productReference = 4365477E29EF0D04007E9BB7 /* RoomBookingAppUITests.xctest */;
+			productType = "com.apple.product-type.bundle.ui-testing";
+		};
+/* End PBXNativeTarget section */
+
+/* Begin PBXProject section */
+		4365475329EF0D02007E9BB7 /* Project object */ = {
+			isa = PBXProject;
+			attributes = {
+				BuildIndependentTargetsInParallel = 1;
+				CLASSPREFIX = SP;
+				LastSwiftUpdateCheck = 1420;
+				LastUpgradeCheck = 1420;
+				ORGANIZATIONNAME = "";
+				TargetAttributes = {
+					4365475A29EF0D02007E9BB7 = {
+						CreatedOnToolsVersion = 14.2;
+					};
+					4365477329EF0D04007E9BB7 = {
+						CreatedOnToolsVersion = 14.2;
+						TestTargetID = 4365475A29EF0D02007E9BB7;
+					};
+					4365477D29EF0D04007E9BB7 = {
+						CreatedOnToolsVersion = 14.2;
+						TestTargetID = 4365475A29EF0D02007E9BB7;
+					};
+				};
+			};
+			buildConfigurationList = 4365475629EF0D02007E9BB7 /* Build configuration list for PBXProject "RoomBookingApp" */;
+			compatibilityVersion = "Xcode 14.0";
+			developmentRegion = en;
+			hasScannedForEncodings = 0;
+			knownRegions = (
+				en,
+				Base,
+			);
+			mainGroup = 4365475229EF0D02007E9BB7;
+			productRefGroup = 4365475C29EF0D02007E9BB7 /* Products */;
+			projectDirPath = "";
+			projectRoot = "";
+			targets = (
+				4365475A29EF0D02007E9BB7 /* RoomBookingApp */,
+				4365477329EF0D04007E9BB7 /* RoomBookingAppTests */,
+				4365477D29EF0D04007E9BB7 /* RoomBookingAppUITests */,
+			);
+		};
+/* End PBXProject section */
+
+/* Begin PBXResourcesBuildPhase section */
+		4365475929EF0D02007E9BB7 /* Resources */ = {
+			isa = PBXResourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				436547D829EF0DAB007E9BB7 /* SignUpViewController.xib in Resources */,
+				4365476E29EF0D03007E9BB7 /* LaunchScreen.storyboard in Resources */,
+				436547CC29EF0DAB007E9BB7 /* MyTableViewCell.xib in Resources */,
+				436547E629EF0DAB007E9BB7 /* RoomBookingPageViewController.xib in Resources */,
+				436547E129EF0DAB007E9BB7 /* Main.storyboard in Resources */,
+				436547D029EF0DAB007E9BB7 /* MyCollectionViewCell.xib in Resources */,
+				4365476B29EF0D03007E9BB7 /* Assets.xcassets in Resources */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+		4365477229EF0D04007E9BB7 /* Resources */ = {
+			isa = PBXResourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+		4365477C29EF0D04007E9BB7 /* Resources */ = {
+			isa = PBXResourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+/* End PBXResourcesBuildPhase section */
+
+/* Begin PBXSourcesBuildPhase section */
+		4365475729EF0D02007E9BB7 /* Sources */ = {
+			isa = PBXSourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				4365475F29EF0D02007E9BB7 /* AppDelegate.swift in Sources */,
+				436547E829EF0DAB007E9BB7 /* RoomBookingPageInteractor.swift in Sources */,
+				432EC2152A02169A00501791 /* RemoveOwnBuildingEntity.swift in Sources */,
+				4327892929F00AC000A653AB /* CustomCollectionViewCell.swift in Sources */,
+				436547FA29EF0E5D007E9BB7 /* CoreDataManager.swift in Sources */,
+				436547DC29EF0DAB007E9BB7 /* DashBoardTabBarRouter.swift in Sources */,
+				436547CE29EF0DAB007E9BB7 /* HomePageRouter.swift in Sources */,
+				432EC2172A021C9300501791 /* AddOwnBuildingEntity.swift in Sources */,
+				436547D329EF0DAB007E9BB7 /* HomePageEntity.swift in Sources */,
+				436547D729EF0DAB007E9BB7 /* SignUpEntity.swift in Sources */,
+				43BAEC6129F2408D00F44C74 /* DirectRoomBookingRouter.swift in Sources */,
+				436547F129EF0DAB007E9BB7 /* StatusPageInteractor.swift in Sources */,
+				436547F229EF0DAB007E9BB7 /* StatusPageRouter.swift in Sources */,
+				439043D929FA3F8A00841828 /* SPCollectionViewCellRouter.swift in Sources */,
+				43BAEC6029F2408D00F44C74 /* DirectRoomBookingPresenter.swift in Sources */,
+				4365480D29EF13BF007E9BB7 /* Floor+CoreDataClass.swift in Sources */,
+				4365476929EF0D02007E9BB7 /* RoomBookingApp.xcdatamodeld in Sources */,
+				436547EB29EF0DAB007E9BB7 /* AddMeetingTabBarInteractor.swift in Sources */,
+				436547EF29EF0DAB007E9BB7 /* StatusPagePresenter.swift in Sources */,
+				4327892729EFFD4A00A653AB /* RemoveOwnBuildingInteractor.swift in Sources */,
+				436547EC29EF0DAB007E9BB7 /* AddMeetingTabBarViewController.swift in Sources */,
+				435F708A29FA44DC001402A2 /* SPTableViewCell.swift in Sources */,
+				4365481029EF13BF007E9BB7 /* Room+CoreDataProperties.swift in Sources */,
+				436547CD29EF0DAB007E9BB7 /* HomePagePresenter.swift in Sources */,
+				439043DB29FA3F8A00841828 /* SPCollectionViewCellInteractor.swift in Sources */,
+				436547E329EF0DAB007E9BB7 /* SignInViewController.swift in Sources */,
+				436547F329EF0DAB007E9BB7 /* ProfilePageViewController.swift in Sources */,
+				436547DB29EF0DAB007E9BB7 /* DashBoardTabBarInteractor.swift in Sources */,
+				4365480F29EF13BF007E9BB7 /* Room+CoreDataClass.swift in Sources */,
+				436547D429EF0DAB007E9BB7 /* SignUpViewController.swift in Sources */,
+				4327891E29EFFD2800A653AB /* AddOwnBuildingViewController.swift in Sources */,
+				436547E229EF0DAB007E9BB7 /* SignInEntity.swift in Sources */,
+				43BAEC6329F2408D00F44C74 /* DirectRoomBookingInteractor.swift in Sources */,
+				436547E429EF0DAB007E9BB7 /* RoomBookingPageEntity.swift in Sources */,
+				435F708829FA44DC001402A2 /* SPTableViewCellPresenter.swift in Sources */,
+				436547CF29EF0DAB007E9BB7 /* HomePageInteractor.swift in Sources */,
+				436547E729EF0DAB007E9BB7 /* RoomBookingPageRouter.swift in Sources */,
+				4365481129EF13BF007E9BB7 /* Building+CoreDataClass.swift in Sources */,
+				439043DA29FA3F8A00841828 /* SPCollectionViewCell.swift in Sources */,
+				436547D529EF0DAB007E9BB7 /* SignUpRouter.swift in Sources */,
+				4327891D29EFFD2800A653AB /* AddOwnBuildingRouter.swift in Sources */,
+				436547F529EF0DAB007E9BB7 /* ProfilePageRouter.swift in Sources */,
+				436547DA29EF0DAB007E9BB7 /* DashBoardTabbarController.swift in Sources */,
+				436547F629EF0DAB007E9BB7 /* ProfilePageInteractor.swift in Sources */,
+				436547E929EF0DAB007E9BB7 /* RoomBookingPageViewController.swift in Sources */,
+				435F708929FA44DC001402A2 /* SPTableViewCellRouter.swift in Sources */,
+				4365481229EF13BF007E9BB7 /* Building+CoreDataProperties.swift in Sources */,
+				436547E029EF0DAB007E9BB7 /* SignInRouter.swift in Sources */,
+				435F708B29FA44DC001402A2 /* SPTableViewCellInteractor.swift in Sources */,
+				4365476129EF0D02007E9BB7 /* SceneDelegate.swift in Sources */,
+				436547ED29EF0DAB007E9BB7 /* AddMeetingTabBarPresenter.swift in Sources */,
+				436547D229EF0DAB007E9BB7 /* HomePageViewController.swift in Sources */,
+				4327892529EFFD4A00A653AB /* RemoveOwnBuildingRouter.swift in Sources */,
+				436547D629EF0DAB007E9BB7 /* SignUpInteractor.swift in Sources */,
+				436547DD29EF0DAB007E9BB7 /* DashBoardTabBarPresenter.swift in Sources */,
+				436547DE29EF0DAB007E9BB7 /* SignInPresenter.swift in Sources */,
+				4327892629EFFD4A00A653AB /* RemoveOwnBuildingViewController.swift in Sources */,
+				436547D929EF0DAB007E9BB7 /* SignUpPresenter.swift in Sources */,
+				436547E529EF0DAB007E9BB7 /* RoomBookingPagePresenter.swift in Sources */,
+				43EECE4D29F5915F004A4565 /* AddMeetingTabBarRouter.swift in Sources */,
+				436547F029EF0DAB007E9BB7 /* StatusPageViewController.swift in Sources */,
+				436547DF29EF0DAB007E9BB7 /* SignInInteractor.swift in Sources */,
+				4327891C29EFFD2800A653AB /* AddOwnBuildingPresenter.swift in Sources */,
+				43BAEC6229F2408D00F44C74 /* DirectRoomBookingViewController.swift in Sources */,
+				436547EE29EF0DAB007E9BB7 /* StatusPageEntity.swift in Sources */,
+				4327892429EFFD4A00A653AB /* RemoveOwnBuildingPresenter.swift in Sources */,
+				439043D829FA3F8A00841828 /* SPCollectionViewCellPresenter.swift in Sources */,
+				4365480E29EF13BF007E9BB7 /* Floor+CoreDataProperties.swift in Sources */,
+				436547F429EF0DAB007E9BB7 /* ProfilePagePresenter.swift in Sources */,
+				4327891F29EFFD2800A653AB /* AddOwnBuildingInteractor.swift in Sources */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+		4365477029EF0D04007E9BB7 /* Sources */ = {
+			isa = PBXSourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				4365477929EF0D04007E9BB7 /* RoomBookingAppTests.swift in Sources */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+		4365477A29EF0D04007E9BB7 /* Sources */ = {
+			isa = PBXSourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				4365478329EF0D04007E9BB7 /* RoomBookingAppUITests.swift in Sources */,
+				4365478529EF0D04007E9BB7 /* RoomBookingAppUITestsLaunchTests.swift in Sources */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+/* End PBXSourcesBuildPhase section */
+
+/* Begin PBXTargetDependency section */
+		4365477629EF0D04007E9BB7 /* PBXTargetDependency */ = {
+			isa = PBXTargetDependency;
+			target = 4365475A29EF0D02007E9BB7 /* RoomBookingApp */;
+			targetProxy = 4365477529EF0D04007E9BB7 /* PBXContainerItemProxy */;
+		};
+		4365478029EF0D04007E9BB7 /* PBXTargetDependency */ = {
+			isa = PBXTargetDependency;
+			target = 4365475A29EF0D02007E9BB7 /* RoomBookingApp */;
+			targetProxy = 4365477F29EF0D04007E9BB7 /* PBXContainerItemProxy */;
+		};
+/* End PBXTargetDependency section */
+
+/* Begin PBXVariantGroup section */
+		4365476C29EF0D03007E9BB7 /* LaunchScreen.storyboard */ = {
+			isa = PBXVariantGroup;
+			children = (
+				4365476D29EF0D03007E9BB7 /* Base */,
+			);
+			name = LaunchScreen.storyboard;
+			sourceTree = "<group>";
+		};
+		436547AF29EF0DAB007E9BB7 /* Main.storyboard */ = {
+			isa = PBXVariantGroup;
+			children = (
+				436547B029EF0DAB007E9BB7 /* Base */,
+			);
+			name = Main.storyboard;
+			sourceTree = "<group>";
+		};
+/* End PBXVariantGroup section */
+
+/* Begin XCBuildConfiguration section */
+		4365478629EF0D04007E9BB7 /* Debug */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				ALWAYS_SEARCH_USER_PATHS = NO;
+				CLANG_ANALYZER_NONNULL = YES;
+				CLANG_ANALYZER_NUMBER_OBJECT_CONVERSION = YES_AGGRESSIVE;
+				CLANG_CXX_LANGUAGE_STANDARD = "gnu++20";
+				CLANG_ENABLE_MODULES = YES;
+				CLANG_ENABLE_OBJC_ARC = YES;
+				CLANG_ENABLE_OBJC_WEAK = YES;
+				CLANG_WARN_BLOCK_CAPTURE_AUTORELEASING = YES;
+				CLANG_WARN_BOOL_CONVERSION = YES;
+				CLANG_WARN_COMMA = YES;
+				CLANG_WARN_CONSTANT_CONVERSION = YES;
+				CLANG_WARN_DEPRECATED_OBJC_IMPLEMENTATIONS = YES;
+				CLANG_WARN_DIRECT_OBJC_ISA_USAGE = YES_ERROR;
+				CLANG_WARN_DOCUMENTATION_COMMENTS = YES;
+				CLANG_WARN_EMPTY_BODY = YES;
+				CLANG_WARN_ENUM_CONVERSION = YES;
+				CLANG_WARN_INFINITE_RECURSION = YES;
+				CLANG_WARN_INT_CONVERSION = YES;
+				CLANG_WARN_NON_LITERAL_NULL_CONVERSION = YES;
+				CLANG_WARN_OBJC_IMPLICIT_RETAIN_SELF = YES;
+				CLANG_WARN_OBJC_LITERAL_CONVERSION = YES;
+				CLANG_WARN_OBJC_ROOT_CLASS = YES_ERROR;
+				CLANG_WARN_QUOTED_INCLUDE_IN_FRAMEWORK_HEADER = YES;
+				CLANG_WARN_RANGE_LOOP_ANALYSIS = YES;
+				CLANG_WARN_STRICT_PROTOTYPES = YES;
+				CLANG_WARN_SUSPICIOUS_MOVE = YES;
+				CLANG_WARN_UNGUARDED_AVAILABILITY = YES_AGGRESSIVE;
+				CLANG_WARN_UNREACHABLE_CODE = YES;
+				CLANG_WARN__DUPLICATE_METHOD_MATCH = YES;
+				COPY_PHASE_STRIP = NO;
+				DEBUG_INFORMATION_FORMAT = dwarf;
+				DEFINES_MODULE = NO;
+				ENABLE_STRICT_OBJC_MSGSEND = YES;
+				ENABLE_TESTABILITY = YES;
+				GCC_C_LANGUAGE_STANDARD = gnu11;
+				GCC_DYNAMIC_NO_PIC = NO;
+				GCC_NO_COMMON_BLOCKS = YES;
+				GCC_OPTIMIZATION_LEVEL = 0;
+				GCC_PREPROCESSOR_DEFINITIONS = (
+					"DEBUG=1",
+					"$(inherited)",
+				);
+				GCC_WARN_64_TO_32_BIT_CONVERSION = YES;
+				GCC_WARN_ABOUT_RETURN_TYPE = YES_ERROR;
+				GCC_WARN_UNDECLARED_SELECTOR = YES;
+				GCC_WARN_UNINITIALIZED_AUTOS = YES_AGGRESSIVE;
+				GCC_WARN_UNUSED_FUNCTION = YES;
+				GCC_WARN_UNUSED_VARIABLE = YES;
+				IPHONEOS_DEPLOYMENT_TARGET = 16.2;
+				MTL_ENABLE_DEBUG_INFO = INCLUDE_SOURCE;
+				MTL_FAST_MATH = YES;
+				ONLY_ACTIVE_ARCH = YES;
+				SDKROOT = iphoneos;
+				SWIFT_ACTIVE_COMPILATION_CONDITIONS = DEBUG;
+				SWIFT_OPTIMIZATION_LEVEL = "-Onone";
+			};
+			name = Debug;
+		};
+		4365478729EF0D04007E9BB7 /* Release */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				ALWAYS_SEARCH_USER_PATHS = NO;
+				CLANG_ANALYZER_NONNULL = YES;
+				CLANG_ANALYZER_NUMBER_OBJECT_CONVERSION = YES_AGGRESSIVE;
+				CLANG_CXX_LANGUAGE_STANDARD = "gnu++20";
+				CLANG_ENABLE_MODULES = YES;
+				CLANG_ENABLE_OBJC_ARC = YES;
+				CLANG_ENABLE_OBJC_WEAK = YES;
+				CLANG_WARN_BLOCK_CAPTURE_AUTORELEASING = YES;
+				CLANG_WARN_BOOL_CONVERSION = YES;
+				CLANG_WARN_COMMA = YES;
+				CLANG_WARN_CONSTANT_CONVERSION = YES;
+				CLANG_WARN_DEPRECATED_OBJC_IMPLEMENTATIONS = YES;
+				CLANG_WARN_DIRECT_OBJC_ISA_USAGE = YES_ERROR;
+				CLANG_WARN_DOCUMENTATION_COMMENTS = YES;
+				CLANG_WARN_EMPTY_BODY = YES;
+				CLANG_WARN_ENUM_CONVERSION = YES;
+				CLANG_WARN_INFINITE_RECURSION = YES;
+				CLANG_WARN_INT_CONVERSION = YES;
+				CLANG_WARN_NON_LITERAL_NULL_CONVERSION = YES;
+				CLANG_WARN_OBJC_IMPLICIT_RETAIN_SELF = YES;
+				CLANG_WARN_OBJC_LITERAL_CONVERSION = YES;
+				CLANG_WARN_OBJC_ROOT_CLASS = YES_ERROR;
+				CLANG_WARN_QUOTED_INCLUDE_IN_FRAMEWORK_HEADER = YES;
+				CLANG_WARN_RANGE_LOOP_ANALYSIS = YES;
+				CLANG_WARN_STRICT_PROTOTYPES = YES;
+				CLANG_WARN_SUSPICIOUS_MOVE = YES;
+				CLANG_WARN_UNGUARDED_AVAILABILITY = YES_AGGRESSIVE;
+				CLANG_WARN_UNREACHABLE_CODE = YES;
+				CLANG_WARN__DUPLICATE_METHOD_MATCH = YES;
+				COPY_PHASE_STRIP = NO;
+				DEBUG_INFORMATION_FORMAT = "dwarf-with-dsym";
+				DEFINES_MODULE = NO;
+				ENABLE_NS_ASSERTIONS = NO;
+				ENABLE_STRICT_OBJC_MSGSEND = YES;
+				GCC_C_LANGUAGE_STANDARD = gnu11;
+				GCC_NO_COMMON_BLOCKS = YES;
+				GCC_WARN_64_TO_32_BIT_CONVERSION = YES;
+				GCC_WARN_ABOUT_RETURN_TYPE = YES_ERROR;
+				GCC_WARN_UNDECLARED_SELECTOR = YES;
+				GCC_WARN_UNINITIALIZED_AUTOS = YES_AGGRESSIVE;
+				GCC_WARN_UNUSED_FUNCTION = YES;
+				GCC_WARN_UNUSED_VARIABLE = YES;
+				IPHONEOS_DEPLOYMENT_TARGET = 16.2;
+				MTL_ENABLE_DEBUG_INFO = NO;
+				MTL_FAST_MATH = YES;
+				SDKROOT = iphoneos;
+				SWIFT_COMPILATION_MODE = wholemodule;
+				SWIFT_OPTIMIZATION_LEVEL = "-O";
+				VALIDATE_PRODUCT = YES;
+			};
+			name = Release;
+		};
+		4365478929EF0D04007E9BB7 /* Debug */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
+				ASSETCATALOG_COMPILER_GLOBAL_ACCENT_COLOR_NAME = AccentColor;
+				CODE_SIGN_STYLE = Automatic;
+				CURRENT_PROJECT_VERSION = 1;
+				DEFINES_MODULE = NO;
+				DEVELOPMENT_TEAM = T2A3F4FJH9;
+				GENERATE_INFOPLIST_FILE = YES;
+				INFOPLIST_FILE = RoomBookingApp/Info.plist;
+				INFOPLIST_KEY_UIApplicationSupportsIndirectInputEvents = YES;
+				INFOPLIST_KEY_UILaunchStoryboardName = LaunchScreen;
+				INFOPLIST_KEY_UIMainStoryboardFile = Main;
+				INFOPLIST_KEY_UISupportedInterfaceOrientations_iPad = "UIInterfaceOrientationPortrait UIInterfaceOrientationPortraitUpsideDown UIInterfaceOrientationLandscapeLeft UIInterfaceOrientationLandscapeRight";
+				INFOPLIST_KEY_UISupportedInterfaceOrientations_iPhone = "UIInterfaceOrientationPortrait UIInterfaceOrientationLandscapeLeft UIInterfaceOrientationLandscapeRight";
+				IPHONEOS_DEPLOYMENT_TARGET = 16.2;
+				LD_RUNPATH_SEARCH_PATHS = (
+					"$(inherited)",
+					"@executable_path/Frameworks",
+				);
+				MARKETING_VERSION = 1.0;
+				PRODUCT_BUNDLE_IDENTIFIER = com.BasicCollectionView.RoomBookingApp;
+				PRODUCT_NAME = "$(TARGET_NAME)";
+				SWIFT_EMIT_LOC_STRINGS = YES;
+				SWIFT_VERSION = 5.0;
+				TARGETED_DEVICE_FAMILY = "1,2";
+			};
+			name = Debug;
+		};
+		4365478A29EF0D04007E9BB7 /* Release */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
+				ASSETCATALOG_COMPILER_GLOBAL_ACCENT_COLOR_NAME = AccentColor;
+				CODE_SIGN_STYLE = Automatic;
+				CURRENT_PROJECT_VERSION = 1;
+				DEFINES_MODULE = NO;
+				DEVELOPMENT_TEAM = T2A3F4FJH9;
+				GENERATE_INFOPLIST_FILE = YES;
+				INFOPLIST_FILE = RoomBookingApp/Info.plist;
+				INFOPLIST_KEY_UIApplicationSupportsIndirectInputEvents = YES;
+				INFOPLIST_KEY_UILaunchStoryboardName = LaunchScreen;
+				INFOPLIST_KEY_UIMainStoryboardFile = Main;
+				INFOPLIST_KEY_UISupportedInterfaceOrientations_iPad = "UIInterfaceOrientationPortrait UIInterfaceOrientationPortraitUpsideDown UIInterfaceOrientationLandscapeLeft UIInterfaceOrientationLandscapeRight";
+				INFOPLIST_KEY_UISupportedInterfaceOrientations_iPhone = "UIInterfaceOrientationPortrait UIInterfaceOrientationLandscapeLeft UIInterfaceOrientationLandscapeRight";
+				IPHONEOS_DEPLOYMENT_TARGET = 16.2;
+				LD_RUNPATH_SEARCH_PATHS = (
+					"$(inherited)",
+					"@executable_path/Frameworks",
+				);
+				MARKETING_VERSION = 1.0;
+				PRODUCT_BUNDLE_IDENTIFIER = com.BasicCollectionView.RoomBookingApp;
+				PRODUCT_NAME = "$(TARGET_NAME)";
+				SWIFT_EMIT_LOC_STRINGS = YES;
+				SWIFT_VERSION = 5.0;
+				TARGETED_DEVICE_FAMILY = "1,2";
+			};
+			name = Release;
+		};
+		4365478C29EF0D04007E9BB7 /* Debug */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				ALWAYS_EMBED_SWIFT_STANDARD_LIBRARIES = YES;
+				BUNDLE_LOADER = "$(TEST_HOST)";
+				CODE_SIGN_STYLE = Automatic;
+				CURRENT_PROJECT_VERSION = 1;
+				GENERATE_INFOPLIST_FILE = YES;
+				IPHONEOS_DEPLOYMENT_TARGET = 16.2;
+				MARKETING_VERSION = 1.0;
+				PRODUCT_BUNDLE_IDENTIFIER = com.BasicCollectionView.RoomBookingAppTests;
+				PRODUCT_NAME = "$(TARGET_NAME)";
+				SWIFT_EMIT_LOC_STRINGS = NO;
+				SWIFT_VERSION = 5.0;
+				TARGETED_DEVICE_FAMILY = "1,2";
+				TEST_HOST = "$(BUILT_PRODUCTS_DIR)/RoomBookingApp.app/$(BUNDLE_EXECUTABLE_FOLDER_PATH)/RoomBookingApp";
+			};
+			name = Debug;
+		};
+		4365478D29EF0D04007E9BB7 /* Release */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				ALWAYS_EMBED_SWIFT_STANDARD_LIBRARIES = YES;
+				BUNDLE_LOADER = "$(TEST_HOST)";
+				CODE_SIGN_STYLE = Automatic;
+				CURRENT_PROJECT_VERSION = 1;
+				GENERATE_INFOPLIST_FILE = YES;
+				IPHONEOS_DEPLOYMENT_TARGET = 16.2;
+				MARKETING_VERSION = 1.0;
+				PRODUCT_BUNDLE_IDENTIFIER = com.BasicCollectionView.RoomBookingAppTests;
+				PRODUCT_NAME = "$(TARGET_NAME)";
+				SWIFT_EMIT_LOC_STRINGS = NO;
+				SWIFT_VERSION = 5.0;
+				TARGETED_DEVICE_FAMILY = "1,2";
+				TEST_HOST = "$(BUILT_PRODUCTS_DIR)/RoomBookingApp.app/$(BUNDLE_EXECUTABLE_FOLDER_PATH)/RoomBookingApp";
+			};
+			name = Release;
+		};
+		4365478F29EF0D04007E9BB7 /* Debug */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				ALWAYS_EMBED_SWIFT_STANDARD_LIBRARIES = YES;
+				CODE_SIGN_STYLE = Automatic;
+				CURRENT_PROJECT_VERSION = 1;
+				GENERATE_INFOPLIST_FILE = YES;
+				MARKETING_VERSION = 1.0;
+				PRODUCT_BUNDLE_IDENTIFIER = com.BasicCollectionView.RoomBookingAppUITests;
+				PRODUCT_NAME = "$(TARGET_NAME)";
+				SWIFT_EMIT_LOC_STRINGS = NO;
+				SWIFT_VERSION = 5.0;
+				TARGETED_DEVICE_FAMILY = "1,2";
+				TEST_TARGET_NAME = RoomBookingApp;
+			};
+			name = Debug;
+		};
+		4365479029EF0D04007E9BB7 /* Release */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				ALWAYS_EMBED_SWIFT_STANDARD_LIBRARIES = YES;
+				CODE_SIGN_STYLE = Automatic;
+				CURRENT_PROJECT_VERSION = 1;
+				GENERATE_INFOPLIST_FILE = YES;
+				MARKETING_VERSION = 1.0;
+				PRODUCT_BUNDLE_IDENTIFIER = com.BasicCollectionView.RoomBookingAppUITests;
+				PRODUCT_NAME = "$(TARGET_NAME)";
+				SWIFT_EMIT_LOC_STRINGS = NO;
+				SWIFT_VERSION = 5.0;
+				TARGETED_DEVICE_FAMILY = "1,2";
+				TEST_TARGET_NAME = RoomBookingApp;
+			};
+			name = Release;
+		};
+/* End XCBuildConfiguration section */
+
+/* Begin XCConfigurationList section */
+		4365475629EF0D02007E9BB7 /* Build configuration list for PBXProject "RoomBookingApp" */ = {
+			isa = XCConfigurationList;
+			buildConfigurations = (
+				4365478629EF0D04007E9BB7 /* Debug */,
+				4365478729EF0D04007E9BB7 /* Release */,
+			);
+			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
+		};
+		4365478829EF0D04007E9BB7 /* Build configuration list for PBXNativeTarget "RoomBookingApp" */ = {
+			isa = XCConfigurationList;
+			buildConfigurations = (
+				4365478929EF0D04007E9BB7 /* Debug */,
+				4365478A29EF0D04007E9BB7 /* Release */,
+			);
+			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
+		};
+		4365478B29EF0D04007E9BB7 /* Build configuration list for PBXNativeTarget "RoomBookingAppTests" */ = {
+			isa = XCConfigurationList;
+			buildConfigurations = (
+				4365478C29EF0D04007E9BB7 /* Debug */,
+				4365478D29EF0D04007E9BB7 /* Release */,
+			);
+			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
+		};
+		4365478E29EF0D04007E9BB7 /* Build configuration list for PBXNativeTarget "RoomBookingAppUITests" */ = {
+			isa = XCConfigurationList;
+			buildConfigurations = (
+				4365478F29EF0D04007E9BB7 /* Debug */,
+				4365479029EF0D04007E9BB7 /* Release */,
+			);
+			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
+		};
+/* End XCConfigurationList section */
+
+/* Begin XCVersionGroup section */
+		4365476729EF0D02007E9BB7 /* RoomBookingApp.xcdatamodeld */ = {
+			isa = XCVersionGroup;
+			children = (
+				4365476829EF0D02007E9BB7 /* RoomBookingApp.xcdatamodel */,
+			);
+			currentVersion = 4365476829EF0D02007E9BB7 /* RoomBookingApp.xcdatamodel */;
+			path = RoomBookingApp.xcdatamodeld;
+			sourceTree = "<group>";
+			versionGroupType = wrapper.xcdatamodel;
+		};
+/* End XCVersionGroup section */
+	};
+	rootObject = 4365475329EF0D02007E9BB7 /* Project object */;
+}
